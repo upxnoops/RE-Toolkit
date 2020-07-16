@@ -1,0 +1,4 @@
+[submodule "Tools/TekDefense-Automater"]
+	path = Tools/TekDefense-Automater
+	url = https://github.com/1aN0rmus/TekDefense-Automater.git
+	branch = master
