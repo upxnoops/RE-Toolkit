@@ -90,3 +90,7 @@
 	path = Tools/jd-gui
 	url = https://github.com/java-decompiler/jd-gui
 	branch = master
+[submodule "Tools/pdfobjflow"]
+	path = Tools/pdfobjflow
+	url = https://bitbucket.org/sebastiendamaye/pdfobjflow.git
+	branch = master
