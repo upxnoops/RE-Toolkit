@@ -10,3 +10,79 @@
 	path = Tools/TekDefense-Automater
 	url = https://github.com/1aN0rmus/TekDefense-Automater.git
 	branch = master
+[submodule "Tools/packerid"]
+	path = Tools/packerid
+	url = https://github.com/sooshie/packerid.git
+	branch = master
+[submodule "Tools/pyew"]
+	path = Tools/pyew
+	url = https://github.com/joxeankoret/pyew.git
+	branch = master
+[submodule "Tools/pyinstxtractor"]
+	path = Tools/pyinstxtractor
+	url = https://github.com/extremecoders-re/pyinstxtractor.git
+	branch = master
+[submodule "Tools/peframe"]
+	path = Tools/peframe
+	url = https://github.com/guelfoweb/peframe.git
+	branch = master
+[submodule "Tools/udis86"]
+	path = Tools/udis86
+	url = https://github.com/vmt/udis86.git
+	branch = master
+[submodule "Tools/libemu"]
+	path = Tools/libemu
+	url = https://github.com/buffer/libemu.git
+	branch = master
+[submodule "Tools/nsrllookup"]
+	path = Tools/nsrllookup
+	url = https://github.com/rjhansen/nsrllookup.git
+	branch = master
+[submodule "Tools/VirusTotalApi"]
+	path = Tools/VirusTotalApi
+	url = https://github.com/doomedraven/VirusTotalApi.git
+	branch = master
+[submodule "Tools/edb-debugger"]
+	path = Tools/edb-debugger
+	url = https://github.com/eteran/edb-debugger.git
+	branch = master
+[submodule "Tools/maltrieve"]
+	path = Tools/maltrieve
+	url = https://github.com/krmaxwell/maltrieve.git
+	branch = master
+[submodule "Tools/Shellcode-Extractor"]
+	path = Tools/Shellcode-Extractor
+	url = https://github.com/Neetx/Shellcode-Extractor.git
+	branch = master
+[submodule "Tools/Exescan"]
+	path = Tools/Exescan
+	url = https://github.com/cysinfo/Exescan.git
+	branch = master
+[submodule "Tools/shellcode_tools"]
+	path = Tools/shellcode_tools
+	url = https://github.com/MarioVilas/shellcode_tools.git
+	branch = master
+[submodule "Tools/AnalyzePDF"]
+	path = Tools/AnalyzePDF
+	url = https://github.com/hiddenillusion/AnalyzePDF.git
+	branch = master
+[submodule "Tools/pdfxray_lite"]
+	path = Tools/pdfxray_lite
+	url = https://github.com/9b/pdfxray_lite.git
+	branch = master
+[submodule "Tools/YaraGenerator"]
+	path = Tools/YaraGenerator
+	url = https://github.com/Xen0ph0n/YaraGenerator.git
+	branch = master
+[submodule "Tools/IOCextractor"]
+	path = Tools/IOCextractor
+	url = https://github.com/bworrell/IOCextractor.git
+	branch = master
+[submodule "Tools/rules"]
+	path = Tools/rules
+	url = https://github.com/Yara-Rules/rules.git
+	branch = master
+[submodule "Tools/m2elf"]
+	path = Tools/m2elf
+	url = https://github.com/XlogicX/m2elf.git
+	branch = master
