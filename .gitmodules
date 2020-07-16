@@ -2,3 +2,11 @@
 	path = Tools/TekDefense-Automater
 	url = https://github.com/1aN0rmus/TekDefense-Automater.git
 	branch = master
+[submodule "CapTipper"]
+	path = CapTipper
+	url = https://github.com/omriher/CapTipper.git
+	branch = master
+[submodule "Tools/CapTipper"]
+	path = Tools/CapTipper
+	url = https://github.com/omriher/CapTipper.git
+	branch = master
