@@ -86,3 +86,7 @@
 	path = Tools/CapTipper
 	url = https://github.com/omriher/CapTipper.git
 	branch = master
+[submodule "Tools/jd-gui"]
+	path = Tools/jd-gui
+	url = https://github.com/java-decompiler/jd-gui
+	branch = master
