@@ -2,3 +2,11 @@
 	path = Tools/CapTipper
 	url = https://github.com/omriher/CapTipper.git
 	branch = master
+[submodule "Tools/volatility"]
+	path = Tools/volatility
+	url = https://github.com/volatilityfoundation/volatility.git
+	branch = master
+[submodule "Tools/TekDefense-Automater"]
+	path = Tools/TekDefense-Automater
+	url = https://github.com/1aN0rmus/TekDefense-Automater.git
+	branch = master
