@@ -1,0 +1,4 @@
+[submodule "Tools/CapTipper"]
+	path = Tools/CapTipper
+	url = https://github.com/omriher/CapTipper.git
+	branch = master
