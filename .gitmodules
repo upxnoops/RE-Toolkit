@@ -82,3 +82,7 @@
 	path = Tools/m2elf
 	url = https://github.com/XlogicX/m2elf.git
 	branch = master
+[submodule "Tools/CapTipper"]
+	path = Tools/CapTipper
+	url = https://github.com/omriher/CapTipper.git
+	branch = master
