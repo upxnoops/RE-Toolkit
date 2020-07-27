@@ -94,3 +94,11 @@
 	path = Tools/pdfobjflow
 	url = https://bitbucket.org/sebastiendamaye/pdfobjflow.git
 	branch = master
+[submodule "katoolin3"]
+	path = katoolin3
+	url = https://github.com/s-h-3-l-l/katoolin3
+	branch = master
+[submodule "Tools/katoolin3"]
+	path = Tools/katoolin3
+	url = https://github.com/s-h-3-l-l/katoolin3
+	branch = master
