@@ -380,7 +380,15 @@ cd  /home/$SUDO_USER/RE-Toolkit/Tools/volatilit && sudo python setup.py install
 
 }
 
+install_katoolin() {
+git clone https://github.com/s-h-3-l-l/katoolin3
+cd katoolin3/
+sudo ./install.sh
+check_exit_status
 
+printf '0\n1\n20\n22\n7\n11\n13\n14\n9\n' | sudo katoolin3
+check_exit_status
+}
 
 
 exit_install() {
@@ -423,7 +431,7 @@ install_xpdf
 install_gems
 install_libemu
 pip3_tools
-install_nsrllookup
+install_katoolin
 install_virustotalapi
 install_disass
 install_edb
