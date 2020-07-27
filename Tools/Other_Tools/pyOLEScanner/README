@@ -1,0 +1,14 @@
+pyOLEScanner 1.3 - Malicious Office Files Detector
+
+- Bug Fix
+- Added More Shellcode Detection
+- Added Api Shellcode Detection
+- SQLite support
+- OLE2 Macro Scan
+- Office2007 Unpack and Macro Scan
+
+Next Issue:
+
+- CVE Detection
+
+USAGE: python pyOLEScanner.py _suspect_document
