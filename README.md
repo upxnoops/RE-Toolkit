@@ -15,6 +15,5 @@ This program helps to install the toolkit for performing Reverse Engineering.
 Instructions
 -----
 
-chmod +x setup.sh
-./setup.sh
+chmod +x setup.sh && ./setup.sh
 
