@@ -377,17 +377,9 @@ dpkg -i  /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/elfparser_x86_64_1.4.0.de
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/maltrieve && pip install requests==2.14.2 && sudo pip install -e .
 chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss && sudo cp /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss /bin/
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/volatilit && sudo python setup.py install
+cd  /home/$SUDO_USER/RE-Toolkit/Tools/katoolin3 && sudo ./install.sh && printf '0\n1\n20\n22\n7\n11\n13\n14\n9\n' | sudo katoolin3 
 
-}
 
-install_katoolin() {
-git clone https://github.com/s-h-3-l-l/katoolin3
-cd katoolin3/
-sudo ./install.sh
-check_exit_status
-
-printf '0\n1\n20\n22\n7\n11\n13\n14\n9\n' | sudo katoolin3
-check_exit_status
 }
 
 
@@ -412,31 +404,31 @@ install_network_miner
 install_pip2
 pip2_tools
 install_burp
-install_automater
-install_captipper
-install_flare
-install_jd_gui
-install_jad
-download_cfr
-install_packerid
-install_densityscout
-install_bytehist
-install_pyew
-install_pyinstaller_extractor
+#install_automater
+#install_captipper
+#install_flare
+#install_jd_gui
+#install_jad
+#download_cfr
+#install_packerid
+#install_densityscout
+#install_bytehist
+#install_pyew
+#install_pyinstaller_extractor
 install_ratdecoders
-install_peframe
-install_udis86
+#install_peframe
+#install_udis86
 sudo snap install pycdc
-install_xpdf
+#install_xpdf
 install_gems
-install_libemu
+#install_libemu
 pip3_tools
-install_katoolin
-install_virustotalapi
-install_disass
-install_edb
+#install_katoolin
+#install_virustotalapi
+#install_disass
+#install_edb
 download_git
-install_elfparser
-install_maltrieve
+#install_elfparser
+#install_maltrieve
 check_exit_status
 exit_install
