@@ -400,14 +400,14 @@ exit_update
 apt_tools
 folder
 sudo DEBIAN_FRONTEND=noninteractive apt install -y wireshark
-install_network_miner
+#install_network_miner
 install_pip2
 pip2_tools
-install_burp
-install_ratdecoders
-sudo snap install pycdc
-install_gems
-download_git
-pip3_tools
+#install_burp
+#install_ratdecoders
+#sudo snap install pycdc
+#install_gems
+#download_git
+#pip3_tools
 check_exit_status
 exit_install
