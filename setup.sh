@@ -358,10 +358,10 @@ install_ratdecoders() {
 
 
 download_git() {
-	
-	
-git clone --recursive https://github.com/upxnoops/RE-Toolkit
-cd /home/$SUDO_USER/RE-Toolkit/Tools
+
+cd /home/$SUDO_USER && git clone --recursive https://github.com/upxnoops/RE-Toolkit
+chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/densityscout && check_exit_status
+chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/bytehist && check_exit_status
 chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/densityscout
 chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/bytehist
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/peframe && 	yes "" | sudo bash install.sh
@@ -376,8 +376,9 @@ cd  /home/$SUDO_USER/RE-Toolkit/Tools/edb-debugger && mkdir build && cd build &&
 dpkg -i  /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/elfparser_x86_64_1.4.0.deb
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/maltrieve && pip install requests==2.14.2 && sudo pip install -e .
 chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss && sudo cp /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss /bin/
-cd  /home/$SUDO_USER/RE-Toolkit/Tools/volatilit && sudo python setup.py install
+cd  /home/$SUDO_USER/RE-Toolkit/Tools/volatility && sudo python setup.py install
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/katoolin3 && sudo ./install.sh && printf '0\n1\n20\n22\n7\n11\n13\n14\n9\n' | sudo katoolin3 
+pip3_tools
 
 
 }
@@ -408,6 +409,5 @@ pip2_tools
 #sudo snap install pycdc
 #install_gems
 #download_git
-#pip3_tools
 check_exit_status
 exit_install
