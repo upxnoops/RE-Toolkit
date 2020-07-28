@@ -407,7 +407,7 @@ install_burp
 install_ratdecoders
 sudo snap install pycdc
 install_gems
-pip3_tools
 download_git
+pip3_tools
 check_exit_status
 exit_install
