@@ -358,30 +358,27 @@ install_ratdecoders() {
 
 
 download_git() {
-
-cd /home/$SUDO_USER && git clone --recursive https://github.com/upxnoops/RE-Toolkit
+	
+cd /home/$SUDO_USER	&& git clone --recursive https://github.com/upxnoops/RE-Toolkit
 chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/densityscout && check_exit_status
 chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/bytehist && check_exit_status
-chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/densityscout
-chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/bytehist
-cd  /home/$SUDO_USER/RE-Toolkit/Tools/peframe && 	yes "" | sudo bash install.sh
-cd  /home/$SUDO_USER/RE-Toolkit/Tools/udis86 && ./autogen.sh && ./configure && make && sudo make install
-apt-get install /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/libpoppler90_0.80.0-0ubuntu1.1_amd64.deb -y
-apt-get install /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/xpdf_3.04-13ubuntu4_amd64.deb -y
-cd  /home/$SUDO_USER/RE-Toolkit/Tools/libemu && autoreconf -v -i && ./configure && sudo make install
-cd  /home/$SUDO_USER/RE-Toolkit/Tools/nsrllookup && cmake . && make && sudo make install
-cd  /home/$SUDO_USER/RE-Toolkit/Tools/VirusTotalApi && pip install -r requirements.txt && python setup.py build && sudo python setup.py install
-cd  /home/$SUDO_USER/RE-Toolkit/Tools/disass && sudo python setup.py install
-cd  /home/$SUDO_USER/RE-Toolkit/Tools/edb-debugger && mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX=/usr/local/ .. && make && sudo make install
-dpkg -i  /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/elfparser_x86_64_1.4.0.deb
-cd  /home/$SUDO_USER/RE-Toolkit/Tools/maltrieve && pip install requests==2.14.2 && sudo pip install -e .
-chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss && sudo cp /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss /bin/
-cd  /home/$SUDO_USER/RE-Toolkit/Tools/volatility && sudo python setup.py install
-cd  /home/$SUDO_USER/RE-Toolkit/Tools/katoolin3 && sudo ./install.sh && printf '0\n1\n20\n22\n7\n11\n13\n14\n9\n' | sudo katoolin3 
-pip3_tools
-
+cd  /home/$SUDO_USER/RE-Toolkit/Tools/peframe && yes "" | sudo bash install.sh && check_exit_status
+apt-get install autoreconf && cd  /home/$SUDO_USER/RE-Toolkit/Tools/udis86 && ./autogen.sh && ./configure && make && sudo make install && check_exit_status
+apt-get install /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/libpoppler90_0.80.0-0ubuntu1.1_amd64.deb -y && check_exit_status
+apt-get install /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/xpdf_3.04-13ubuntu4_amd64.deb -y && check_exit_status
+cd  /home/$SUDO_USER/RE-Toolkit/Tools/libemu && autoreconf -v -i && ./configure && sudo make install && check_exit_status
+cd  /home/$SUDO_USER/RE-Toolkit/Tools/nsrllookup && cmake . && make && sudo make install && check_exit_status
+cd  /home/$SUDO_USER/RE-Toolkit/Tools/VirusTotalApi && pip install -r requirements.txt && python setup.py build && sudo python setup.py install && check_exit_status
+cd  /home/$SUDO_USER/RE-Toolkit/Tools/disass && sudo python setup.py install && check_exit_status
+cd  /home/$SUDO_USER/RE-Toolkit/Tools/edb-debugger && mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX=/usr/local/ .. && make && sudo make install && check_exit_status
+dpkg -i  /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/elfparser_x86_64_1.4.0.deb && check_exit_status
+cd  /home/$SUDO_USER/RE-Toolkit/Tools/maltrieve && pip install requests==2.14.2 && sudo pip install -e . && check_exit_status
+chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss && sudo cp /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss /bin/ && check_exit_status
+cd  /home/$SUDO_USER/RE-Toolkit/Tools/volatility && sudo python setup.py install && check_exit_status
 
 }
+
+
 
 
 exit_install() {
@@ -401,13 +398,14 @@ exit_update
 apt_tools
 folder
 sudo DEBIAN_FRONTEND=noninteractive apt install -y wireshark
-#install_network_miner
+install_network_miner
 install_pip2
 pip2_tools
-#install_burp
-#install_ratdecoders
-#sudo snap install pycdc
-#install_gems
-#download_git
+install_burp
+install_ratdecoders
+sudo snap install pycdc
+install_gems
+download_git
+pip3_tools
 check_exit_status
 exit_install
