@@ -237,13 +237,14 @@ for i in $INSTALL_PKGS; do
 done
 }
 
-folder() {
-	mkdir /home/$SUDO_USER/Tools
-	cd /home/$SUDO_USER/Tools
+#folder() {
+#	mkdir /home/$SUDO_USER/Tools
+#	cd /home/$SUDO_USER/Tools
 	
-	echo 'export PATH="/home/$SUDO_USER/.local/bin:$PATH"' | sudo tee /etc/profile.d/path.sh
-	export PATH="/home/$SUDO_USER/.local/bin:$PATH"
-}
+#	echo 'export PATH="/home/$SUDO_USER/.local/bin:$PATH"' | sudo tee /etc/profile.d/path.sh
+#	export PATH="/home/$SUDO_USER/.local/bin:$PATH"
+
+#}
 
 
 
@@ -347,19 +348,15 @@ install_burp() {
 }
 
 
-
-
 install_ratdecoders() {
 	pip3 install pefile pbkdf2 javaobj-py3 pycrypto androguard yara-python
 	pip3 install --upgrade malwareconfig
 	check_exit_status
 }
 
-
-
 download_git() {
 	
-cd /home/$SUDO_USER	&& git clone --recursive https://github.com/upxnoops/RE-Toolkit
+#cd /home/$SUDO_USER	&& git clone --recursive https://github.com/upxnoops/RE-Toolkit
 chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/densityscout && check_exit_status
 chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/bytehist && check_exit_status
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/peframe && yes "" | sudo bash install.sh && check_exit_status
@@ -375,10 +372,9 @@ dpkg -i  /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/elfparser_x86_64_1.4.0.de
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/maltrieve && pip install requests==2.14.2 && sudo pip install -e . && check_exit_status
 chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss && sudo cp /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss /bin/ && check_exit_status
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/volatility && sudo python setup.py install && check_exit_status
+sudo DEBIAN_FRONTEND=noninteractive apt install -y wireshark && sudo snap install pycdc
 
 }
-
-
 
 
 exit_install() {
@@ -396,8 +392,7 @@ update
 clean
 exit_update
 apt_tools
-folder
-sudo DEBIAN_FRONTEND=noninteractive apt install -y wireshark
+#folder
 install_network_miner
 install_pip2
 pip2_tools
