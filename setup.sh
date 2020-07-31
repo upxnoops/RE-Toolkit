@@ -98,10 +98,10 @@ if [ "$SUDO_USER" = "" ]; then
 fi
 
 apt_tools()  {
-		sudo apt-get install python3-pip -y;
+	sudo apt-get install python3-pip -y;
         sudo DEBIAN_FRONTEND=noninteractive apt install -y wireshark && sudo snap install pycdc 
-        sudo apt install openjdk-11-jdk
-		check_exit_status
+        sudo apt install openjdk-11-jdk -y
+	check_exit_status
 
 INSTALL_PKGS="xterm
     vbindiff
