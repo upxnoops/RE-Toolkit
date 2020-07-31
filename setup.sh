@@ -98,7 +98,8 @@ if [ "$SUDO_USER" = "" ]; then
 fi
 
 apt_tools()  {
-		sudo apt-get install python3-pip -y; 
+		sudo apt-get install python3-pip -y;
+        sudo DEBIAN_FRONTEND=noninteractive apt install -y wireshark && sudo snap install pycdc 
 		check_exit_status
 
 INSTALL_PKGS="xterm
@@ -237,16 +238,6 @@ for i in $INSTALL_PKGS; do
 done
 }
 
-#folder() {
-#	mkdir /home/$SUDO_USER/Tools
-#	cd /home/$SUDO_USER/Tools
-	
-#	echo 'export PATH="/home/$SUDO_USER/.local/bin:$PATH"' | sudo tee /etc/profile.d/path.sh
-#	export PATH="/home/$SUDO_USER/.local/bin:$PATH"
-
-#}
-
-
 
 install_network_miner() {
 	sudo apt-get install -y libmono-system-windows-forms4.0-cil
@@ -311,22 +302,6 @@ done
 
 }
 
-pip3_tools() {
-
-PIP3_PKGS="hachoir
-    urwid
-    testresources
-    requests==2.22.0
-    six==1.14.0
-    viper-framework
-    thug"
-
-for i in $PIP3_PKGS; do
-  sudo pip3 install $i
-  check_exit_status
-done
-
-}
 
 install_gems() {
 
@@ -348,15 +323,14 @@ install_burp() {
 }
 
 
-install_ratdecoders() {
-	pip3 install pefile pbkdf2 javaobj-py3 pycrypto androguard yara-python
+pip3_tools() {
+	pip3 install pefile pbkdf2 javaobj-py3 pycrypto androguard yara-python passivedns-client origami pedump
 	pip3 install --upgrade malwareconfig
 	check_exit_status
 }
 
 download_git() {
-	
-#cd /home/$SUDO_USER	&& git clone --recursive https://github.com/upxnoops/RE-Toolkit
+
 chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/densityscout && check_exit_status
 chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/bytehist && check_exit_status
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/peframe && yes "" | sudo bash install.sh && check_exit_status
@@ -372,7 +346,7 @@ dpkg -i  /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/elfparser_x86_64_1.4.0.de
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/maltrieve && pip install requests==2.14.2 && sudo pip install -e . && check_exit_status
 chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss && sudo cp /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss /bin/ && check_exit_status
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/volatility && sudo python setup.py install && check_exit_status
-sudo DEBIAN_FRONTEND=noninteractive apt install -y wireshark && sudo snap install pycdc
+
 
 }
 
@@ -392,7 +366,6 @@ update
 clean
 exit_update
 apt_tools
-#folder
 install_network_miner
 install_pip2
 pip2_tools
@@ -401,6 +374,6 @@ install_burp
 sudo snap install pycdc
 install_gems
 download_git
-#pip3_tools
+pip3_tools
 check_exit_status
 exit_install
