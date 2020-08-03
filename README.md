@@ -16,4 +16,4 @@ Instructions
 -----
 
 
-apt-get install git && cd /home/$SUDO_USER && git clone --recursive https://github.com/upxnoops/RE-Toolkit && chmod +x /home/$SUDO_USER/RE-Toolkit/setup.sh && /home/$SUDO_USER/RE-Toolkit/setup.sh
+apt-get install git -y && cd /home/$SUDO_USER && git clone --recursive https://github.com/upxnoops/RE-Toolkit && chmod +x /home/$SUDO_USER/RE-Toolkit/setup.sh && /home/$SUDO_USER/RE-Toolkit/setup.sh
