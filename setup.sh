@@ -356,7 +356,7 @@ cd /home/$SUDO_USER/RE-Toolkit/Tools && wget https://ghidra-sre.org/ghidra_9.1.2
 
 echo "Creating Ghidra alias."
 b=`whoami`
-echo "alias run_ghidra='/home/$SUDO_USER/RE-Toolkit/Tools/ghidra_9.1.2_PUBLIC_20200212/ghidraRun'" >> ~/.bashrc
+echo "alias run_ghidra='/home/$SUDO_USER/RE-Toolkit/Tools/ghidra_9.1.2_PUBLIC/ghidraRun'" >> ~/.bashrc
 echo "Alias created:"
 
 
@@ -378,7 +378,7 @@ greeting
 update
 clean
 exit_update
-#apt_tools
+apt_tools
 #install_network_miner
 #install_pip2
 #pip2_tools
