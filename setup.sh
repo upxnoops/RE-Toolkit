@@ -96,7 +96,8 @@ fi
 
 apt_tools()  {
 	sudo apt-get install python3-pip -y;
-        sudo DEBIAN_FRONTEND=noninteractive apt install -y wireshark && sudo snap install pycdc 
+        sudo DEBIAN_FRONTEND=noninteractive apt install -y wireshark 
+        sudo snap install pycdc 
         sudo apt install openjdk-11-jdk -y
 	check_exit_status
 
@@ -332,8 +333,7 @@ pip3_tools() {
 
 download_git() {
 
-chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/densityscout && check_exit_status
-chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/bytehist && check_exit_status
+chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/densityscout && check_exit_status && chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/bytehist && check_exit_status
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/peframe && yes "" | sudo bash install.sh && check_exit_status
 apt-get install autoreconf && cd  /home/$SUDO_USER/RE-Toolkit/Tools/udis86 && ./autogen.sh && ./configure && make && sudo make install && check_exit_status
 apt-get install /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/libpoppler90_0.80.0-0ubuntu1.1_amd64.deb -y && check_exit_status
@@ -347,6 +347,7 @@ dpkg -i  /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/elfparser_x86_64_1.4.0.de
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/maltrieve && pip install requests==2.14.2 && sudo pip install -e . && check_exit_status
 chmod +x /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss && sudo cp /home/$SUDO_USER/RE-Toolkit/Tools/Other_Tools/floss /bin/ && check_exit_status
 cd  /home/$SUDO_USER/RE-Toolkit/Tools/katoolin3 && ./install.sh && printf '0\n1\n20\n22\n7\n11\n13\n14\n9\n' | sudo katoolin3 && check_exit_status
+python3 -m pip install ciphey --upgrade && check_exit_status    
 cd /home/$SUDO_USER/RE-Toolkit/Tools && wget https://ghidra-sre.org/ghidra_9.1.2_PUBLIC_20200212.zip && unzip ghidra_9.1.2_PUBLIC_20200212.zip && echo "alias ghidra='/home/$SUDO_USER/RE-Toolkit/Tools/ghidra_9.1.2_PUBLIC/ghidraRun'" >> ~/.bashrc && check_exit_status
 
 
