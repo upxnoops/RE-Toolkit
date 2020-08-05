@@ -98,3 +98,7 @@
 	path = Tools/katoolin3
 	url = https://github.com/s-h-3-l-l/katoolin3
 	branch = master
+[submodule "Ciphey"]
+	path = Ciphey
+	url = https://github.com/Ciphey/Ciphey
+	branch = master
