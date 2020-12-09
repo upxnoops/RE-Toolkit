@@ -1,7 +1,10 @@
 RE-Toolkit
 ============
 
-Description ....
+Linux-based toolkit distribution designed for reverse engineers, malware analysts and incident responders. The toolkit includes security tools such as debuggers, disassemblers, decompilers, static and dynamic analysis utilities, network analysis and many others. 
+
+The RE-Toolkit will be used on "Botnet Mitigation" course for setting up the lab environment in order to perform static and dynamic analysis on malware samples.
+ 
 
 Compatibility and Requirements
 ------------------------------
