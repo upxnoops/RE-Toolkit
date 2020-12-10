@@ -15,9 +15,14 @@ Usage
 -----
 Reverse Engineering toolkit is a open-source toolset that helps reverse engineers, malware analysts and incident responders to perform advance code analysis using debuggers, disassemblers, decompilers etc. 
 
-#### The toolkit should be instaled on the investigator workstation!!
 
 The tool kit consists of:
+
+| Plugin | README |
+| ------ | ------ |
+| Dropbox | [plugins/dropbox/README.md][PlDb] |
+| GitHub | [plugins/github/README.md][PlGh] |
+
 * 
 * 
 * 
