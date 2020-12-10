@@ -20,7 +20,7 @@ The tool kit consists of:
 
 | Plugin | README |
 | ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
+| Dropbox | [plugins/dropbox/README.md](www.google.com)[PlDb] |
 | GitHub | [plugins/github/README.md][PlGh] |
 
 * 
