@@ -15,7 +15,7 @@ Compatibility and Requirements
 Usage
 -----
 This program helps to install the toolkit for performing Reverse Engineering. 
-[Breakdance](https://breakdance.github.io/breakdance/)
+[Ubuntu](https://breakdance.github.io/breakdance/)
 
 Instructions
 -----
