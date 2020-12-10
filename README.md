@@ -33,5 +33,5 @@ $ git clone --recursive https://github.com/upxnoops/RE-Toolkit
 $ chmod +x /home/$SUDO_USER/RE-Toolkit/setup.sh
 $ /home/$SUDO_USER/RE-Toolkit/setup.sh
 ```
-
+### The toolkit should be instaled on the investigator workstation!!
 
