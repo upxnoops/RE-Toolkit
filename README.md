@@ -9,7 +9,7 @@ Linux-based toolkit distribution designed for reverse engineers, malware analyst
 Compatibility and Requirements
 ------------------------------
 * Tested on [Ubuntu 20.04.1 LTS (Focal Fossa)](https://releases.ubuntu.com/20.04/)
-* Compatible and tested with Python ver 3.9.1 (https://www.python.org/)
+* Compatible and tested with [Python ver 3.9.1](https://www.python.org/)
 
 Usage
 -----
@@ -24,7 +24,7 @@ The tool kit consists of:
 
 Installation
 -----
-The toolkit requires Python V3+ to run (https://www.python.org/)
+The toolkit requires [Python V3+](https://www.python.org/) to run 
 
 ```sh
 $ apt-get install git -y
