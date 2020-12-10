@@ -3,7 +3,7 @@
 
 Linux-based toolkit distribution designed for reverse engineers, malware analysts and incident responders. The toolkit includes security tools such as debuggers, disassemblers, decompilers, static and dynamic analysis utilities, network analysis and many others. 
 
-The RE-Toolkit will be used on "Botnet Mitigation" course for setting up the lab environment in order to perform static and dynamic analysis on malware samples.
+The RE-Toolkit will be used on "Botnet Mitigation course" (https://ccdcoe.org/training/botnet-mitigation-course-bmc-2019-tbd/) for setting up the lab environment in order to perform static and dynamic analysis on malware samples.
  
 
 Compatibility and Requirements
@@ -15,7 +15,7 @@ Usage
 -----
 Reverse Engineering toolkit is a open-source toolset that helps reverse engineers, malware analysts and incident responders to perform advance code analysis using debuggers, disassemblers, decompilers etc. 
 
-#### The toolkit should be instaled on the investigator workstation. 
+#### The toolkit should be instaled on the investigator workstation!!
 
 The tool kit consists of:
 * 
