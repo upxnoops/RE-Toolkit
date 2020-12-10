@@ -40,3 +40,13 @@ $ /home/$SUDO_USER/RE-Toolkit/setup.sh
 ```
 
 #### The toolkit should be instaled on the investigator workstation!!
+
+
+Todos
+-----
+* Add more tools developed by the open-source comunity. 
+* Check for updates and compatibility 
+
+License
+-----
+MIT
