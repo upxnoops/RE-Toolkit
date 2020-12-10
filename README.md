@@ -24,7 +24,7 @@ The tool kit consists of:
 
 Installation
 -----
-The toolkit requires [Python V3+](https://www.python.org/) to run 
+The toolkit requires [Python V3+](https://www.python.org/) to run.
 
 ```sh
 $ apt-get install git -y
@@ -33,5 +33,5 @@ $ git clone --recursive https://github.com/upxnoops/RE-Toolkit
 $ chmod +x /home/$SUDO_USER/RE-Toolkit/setup.sh
 $ /home/$SUDO_USER/RE-Toolkit/setup.sh
 ```
-#### The toolkit should be instaled on the investigator workstation!!
 
+#### The toolkit should be instaled on the investigator workstation!!
