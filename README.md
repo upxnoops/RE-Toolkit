@@ -22,9 +22,15 @@ The tool kit consists of:
 * 
 * 
 
-Instructions
+Installation
 -----
+The toolkit requires Python V3+ to run (https://www.python.org/)
 
+```sh
+$ cd dillinger
+$ npm install -d
+$ node app
+```
 
 apt-get install git -y && 
 
