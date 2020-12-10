@@ -8,7 +8,7 @@ The RE-Toolkit will be used on "Botnet Mitigation" course for setting up the lab
 
 Compatibility and Requirements
 ------------------------------
-* Tested on Ubuntu 20.04.1 LTS (Focal Fossa)
+* Tested on [Ubuntu 20.04.1 LTS (Focal Fossa)](https://releases.ubuntu.com/20.04/)
 * Compatible and tested Python versions: 3
 * etc....
 
