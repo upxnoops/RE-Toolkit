@@ -18,7 +18,7 @@ Reverse Engineering toolkit is a open-source toolset that helps reverse engineer
 
 The tool kit consists of:
 
-| Plugin | README |
+| Plugins | README |
 | ------ | ------ |
 | Volatility | [Volatility](https://github.com/volatilityfoundation/volatility) |
 | Burp | [Burp](https://portswigger.net/burp) |
