@@ -20,7 +20,7 @@ The tool kit consists of:
 
 | Plugin | README |
 | ------ | ------ |
-| Volatility | [](https://github.com/volatilityfoundation/volatility)[Volatility] |
+| Volatility | [Volatility](https://github.com/volatilityfoundation/volatility) |
 | GitHub | [plugins/github/README.md][PlGh] |
 
 * 
